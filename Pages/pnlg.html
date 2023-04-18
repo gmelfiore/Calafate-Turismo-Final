@@ -10,35 +10,30 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="container-fluid d-flex">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../Imagenes/logo-of.png" class="logo justify-content-sm-center">
+            </a>
+        <div class="d-flex justify-content-end">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn bg-white text-hielo negrita me-2" type="submit">Buscar</button>
+            </form>
+            <div class="dropdown">
+                <button class="btn bg-white text-hielo negrita dropdown-toggle" type="button" id="dropdownMenuButton"       data-bs-toggle="dropdown" aria-expanded="false">
+                    Mapas
+                </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Zona Norte</a></li>
+                        <li><a href="#" class="dropdown-item">Perito Moreno</a></li>
+                        <li><a href="#" class="dropdown-item">El Chaltén</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
     <header>
-        <div>
-            <nav class="navbar">
-                <div class="container-fluid d-flex">
-                    <a href="../index.html" class="navbar-brand">
-                        <img src="../Imagenes/logo-of.png" class="logo justify-content-sm-center">
-                    </a>
-                  <div class="d-flex justify-content-end">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn bg-white text-hielo negrita me-2" type="submit">Buscar</button>
-                        </form>
-                        <div class="dropdown">
-                            <button class="btn bg-white text-hielo negrita dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                              Mapas
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#" class="dropdown-item">Zona Norte</a></li>
-                              <li><a href="#" class="dropdown-item">Perito Moreno</a></li>
-                              <li><a href="#" class="dropdown-item">El Chaltén</a></li>
-                            </ul>
-                          </div>
-                  </div>
-                </div>
-            </nav>
-        </div>
-        <div>
-            <img src="../Imagenes/pnlg-header.png" alt="fondo-glaciar">
-        </div>
+        <img src="../Imagenes/pnlg-header.png" alt="Parque Nacional">
     </header>
     <nav>
         <ul>
@@ -76,7 +71,7 @@
     </section>
     <main>
         <h2 class="text-green negrita textoGrande actsCalafate">Excursiones principales</h2>
-        <div class="card mb-3" style="w-100">
+        <div class="card mb-3" style= w-100>
             <div class="row g-0 bg-hielo">
                 <div class="col-md-4">
                     <img src="../Imagenes/minitrekking.jpg" class="img-fluid rounded-start object-fit-cover w-100" alt="minitrekking">
