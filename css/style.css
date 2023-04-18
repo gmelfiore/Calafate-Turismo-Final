@@ -165,7 +165,7 @@ main h2{
 
  
 /* -----Comienza página de GASTRONOMIA----- */
-.categorias{
+#categorias{
   display: flex;
   flex-direction: row;
   justify-content:space-around;
@@ -259,7 +259,6 @@ main h2{
  /* ----------- ends alojamientos ----------- */
  
  /* --------comienza página del parque nacional --------*/
- 
 #histovideo-pnlg{
   display: flex;
   flex-direction: row;
