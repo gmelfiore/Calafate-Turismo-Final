@@ -146,7 +146,12 @@ main h2{
   nav span{
     font-size: small;
   }
-}
+  header div img{
+    height: 30vh;
+    object-fit: cover;
+  }
+} 
+
  
  /* ---comienza index--- */
  
