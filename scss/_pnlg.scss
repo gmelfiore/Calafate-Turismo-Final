@@ -1,7 +1,5 @@
 #histovideo-pnlg{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  @include flexbox (flex, row, nowrap, space-between);
   }
   #histo-pnlg{
     width: 40%;
@@ -15,9 +13,7 @@
     overflow: hidden;
   }
   .apn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox(flex, column, nowrap, center);
     height: 50vh;
     background-image: url(../Imagenes/bg-intendencia.jpg);
     background-size: contain;

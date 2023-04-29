@@ -191,7 +191,7 @@ main h2 {
   padding-bottom: 20px;
 }
 
-#bares {
+#bares #confiterias #pizzerias #parrillas #pastas #comidas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -200,79 +200,7 @@ main h2 {
   margin-bottom: 10px;
 }
 
-#confiterias {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#pizzerias {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#pastas {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#parrillas {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#comidas {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#hoteles {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#hosterias {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#hostels {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#cabanas {
+#hoteles #hosterias #hostels #cabanas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -284,6 +212,7 @@ main h2 {
 #histovideo-pnlg {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
@@ -303,6 +232,7 @@ main h2 {
 .apn {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   height: 50vh;
   background-image: url(../Imagenes/bg-intendencia.jpg);
@@ -370,6 +300,7 @@ main h2 {
 #histovideo-cal {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 

@@ -5,11 +5,11 @@ $bg-color: white;
 
 $mainFont: 'Noto Sans', sans-serif;
 
-@mixin flex-row-wrap-space-around{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+@mixin flexbox ($display, $direction, $wrap, $justify){
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
 }
 @mixin m-top-bottom-10px{
     margin-top: 10px;
