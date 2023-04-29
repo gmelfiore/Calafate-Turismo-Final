@@ -1,0 +1,18 @@
+$mainColor: #6edae2; 
+$secondaryColor: rgb(236, 224, 224);
+$keyColor:#026873;
+$bg-color: white; 
+
+$mainFont: 'Noto Sans', sans-serif;
+
+@mixin flex-row-wrap-space-around{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@mixin m-top-bottom-10px{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,72 @@
+#histovideo-pnlg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #histo-pnlg{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+  }
+  #video-pnlg{
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .apn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    background-image: url(../Imagenes/bg-intendencia.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  .gallery-title{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+  }
+  .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  .gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gallery-item:first-child{
+  grid-column-start: span 2;
+  }
+  .gallery-item:nth-child(4){
+    grid-row-start: span 2;
+  }
+  .gallery-item:nth-child(6){
+    grid-column-start: span 2;
+  }
+  @media (max-width: 459px){
+    .gallery-item{
+      grid-column-start: span 4;
+    }
+    .gallery-item:first-child{
+      grid-column-start: span 4;
+    }
+    .gallery-item:nth-child(6){
+      grid-column-start: span 4;
+    }
+  }
+  @media (max-width:1000px){
+    #histovideo-pnlg{
+      flex-direction: column-reverse;
+    }
+    #histo-pnlg{
+      width: 100%;
+    }
+    #video-pnlg{
+      width: 100%;
+    }
+    }

@@ -1,0 +1,44 @@
+.bg-white{
+  background-color: $bg-color;
+}
+.bg-hielo{
+  background-color: $mainColor;
+}
+.bg-green{
+  background-color: $keyColor;
+ }
+.negrita{
+  font-weight: bold;
+}
+
+.textoGrande{
+  font-size: 30px;
+}
+.text-white{
+  color: $bg-color;
+}
+.text-hielo{
+  color: $mainColor;
+}
+.text-green{
+  color: $keyColor;
+}
+.centrar{
+display: flex;
+justify-content: center;
+}
+.imagenGaleria{
+ width: auto;
+ height: 300px;
+}
+.imagenChica{
+ width: auto;
+ height: 150px;
+}
+.cover{
+  object-fit: cover;
+}
+.mapaChico{
+ width: 150px;
+ height: 100px;
+}

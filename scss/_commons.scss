@@ -1,0 +1,111 @@
+html{
+    font-size: 100%;
+ }
+body{
+    background-color: $bg-color
+ }
+ h1{
+  font-size: 25px;
+ }
+h2{
+  font-size: 22px;
+}
+h3{
+  font-size: 19 px;
+}
+h4{
+  font-size: 16px;
+}
+h5{
+  font-size: 13px;
+}
+.navbar{
+  background-color: $mainColor;
+  width: 100%;
+  overflow: hidden;
+}
+
+ .logo{
+    width: 60px;
+    height: 60px;
+    border: none;
+ }
+ 
+ header{
+    div{
+        img{
+         width: 100%;
+        overflow: hidden;
+        }
+    }
+}
+ nav{
+   background-color: $secondaryColor;
+   position: static;
+   padding: 10px;
+   overflow: hidden;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    span{
+        display: block;
+        font-weight: 600;
+        color: $secondaryColor
+    } 
+ }
+ footer{
+  background-color: $mainColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 25px;
+  overflow: hidden;
+  h3{
+    color: $bg-color;
+} 
+}
+main h2{
+  display: block;
+  color: $keyColor;
+  text-align: center;
+}
+
+@media (max-width: 459px){
+  .logo{
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+  .buscador{
+    width: 30vw;
+  }
+  footer{
+    flex-direction: column;
+  
+    svg{
+    justify-content:center;
+    }
+  }
+  nav{
+     img{
+    width: 60px;
+    }
+    span{
+    font-size: small;
+    }
+  }
+  header{
+    div{ 
+        img{
+        height: 30vh;
+        object-fit: cover;
+            }
+        } 
+    }
+}
+

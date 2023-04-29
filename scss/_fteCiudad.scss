@@ -1,0 +1,30 @@
+.actsCalafate{
+    margin: 15px;
+  }
+  #histovideo-cal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #historia-cal{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+  }
+  #video-cal{
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  @media (max-width:1000px){
+    #histovideo-cal{
+      flex-direction: column-reverse;
+    }
+    #historia-cal{
+      width: 100%;
+    }
+    #video-cal{
+      width: 100%;
+    }
+    }
