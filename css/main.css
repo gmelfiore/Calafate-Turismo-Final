@@ -216,7 +216,7 @@ main h2 {
   justify-content: space-between;
 }
 
-#histo-pnlg {
+#histo-pnlg, #video-pnlg {
   width: 40%;
   margin: 10px;
   padding: 10px;
@@ -224,8 +224,6 @@ main h2 {
 
 #video-pnlg {
   width: 60%;
-  margin: 10px;
-  padding: 10px;
   overflow: hidden;
 }
 
@@ -258,6 +256,11 @@ main h2 {
   height: 100%;
   object-fit: cover;
 }
+.gallery-img:hover {
+  transform: scale(1, 5);
+  transition: all 1s;
+  cursor: pointer;
+}
 
 .gallery-item:first-child {
   grid-column-start: span 2;
@@ -286,7 +289,7 @@ main h2 {
   #histovideo-pnlg {
     flex-direction: column-reverse;
   }
-  #histo-pnlg {
+  #histo-pnlg, #video-pnlg {
     width: 100%;
   }
   #video-pnlg {
@@ -304,7 +307,7 @@ main h2 {
   justify-content: space-between;
 }
 
-#historia-cal {
+#historia-cal, #video-cal {
   width: 40%;
   margin: 10px;
   padding: 10px;
@@ -312,8 +315,6 @@ main h2 {
 
 #video-cal {
   width: 60%;
-  margin: 10px;
-  padding: 10px;
   overflow: hidden;
 }
 
@@ -321,7 +322,7 @@ main h2 {
   #histovideo-cal {
     flex-direction: column-reverse;
   }
-  #historia-cal {
+  #historia-cal, #video-cal {
     width: 100%;
   }
   #video-cal {

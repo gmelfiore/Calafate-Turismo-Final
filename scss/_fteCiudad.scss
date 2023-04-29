@@ -10,9 +10,8 @@
     padding: 10px;
   }
   #video-cal{
+    @extend #historia-cal;
     width: 60%;
-    margin: 10px;
-    padding: 10px;
     overflow: hidden;
   }
   @media (max-width:1000px){
