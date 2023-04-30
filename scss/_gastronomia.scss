@@ -3,7 +3,27 @@
     margin: 5px;
     padding-bottom: 20px;
 }  
-#bares #confiterias #pizzerias #parrillas #pastas #comidas{
+#bares{ 
+    @include flexbox (flex, row, wrap, space-around);
+    @include m-top-bottom-10px;
+}
+#confiterias{
+    @include flexbox (flex, row, wrap, space-around);
+    @include m-top-bottom-10px;
+}
+#pizzerias{
+    @include flexbox (flex, row, wrap, space-around);
+    @include m-top-bottom-10px;
+}
+#parrillas{
+    @include flexbox (flex, row, wrap, space-around);
+    @include m-top-bottom-10px;
+}
+#pastas{
+    @include flexbox (flex, row, wrap, space-around);
+    @include m-top-bottom-10px;
+}
+#comidas{
     @include flexbox (flex, row, wrap, space-around);
     @include m-top-bottom-10px;
 }

@@ -63,8 +63,8 @@ body {
   background-color: white;
 }
 
-h1 {
-  font-size: 25px;
+h1, .headers p {
+  font-size: 85px;
 }
 
 h2 {
@@ -88,16 +88,38 @@ h5 {
   width: 100%;
   overflow: hidden;
 }
+.navbar form {
+  margin-right: 100px;
+}
 
 .logo {
   width: 60px;
   height: 60px;
   border: none;
+  margin-left: 110px;
 }
 
-header div img {
+.headers {
+  position: relative;
+}
+.headers img {
   width: 100%;
   overflow: hidden;
+  height: 50vh;
+  object-fit: cover;
+  opacity: 0.9;
+}
+.headers h1, .headers p {
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 30%;
+  text-shadow: 0 0 8px rgb(0, 0, 0);
+}
+.headers p {
+  font-size: 30px;
+  top: 60%;
+  left: 25%;
 }
 
 nav {
@@ -113,10 +135,13 @@ nav ul {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+nav ul img {
+  width: 80px;
+}
 nav span {
   display: block;
   font-weight: 600;
-  color: rgb(236, 224, 224);
+  color: #026873;
 }
 
 footer {
@@ -138,7 +163,7 @@ main h2 {
   text-align: center;
 }
 
-@media (max-width: 459px) {
+@media (max-width: 472px) {
   .logo {
     justify-content: center;
     width: 40px;
@@ -159,9 +184,27 @@ main h2 {
   nav span {
     font-size: small;
   }
-  header div img {
+  .headers img {
     height: 30vh;
-    object-fit: cover;
+  }
+  .headers h1, .headers p {
+    font-size: 40px;
+    left: 20%;
+  }
+  .headers p {
+    font-size: 10px;
+  }
+}
+@media (min-width: 473px) and (max-width: 1100px) {
+  .headers img {
+    height: 40vh;
+  }
+  .headers h1, .headers p {
+    font-size: 50px;
+    left: 20%;
+  }
+  .headers p {
+    font-size: 20px;
   }
 }
 .mapacalafate {
@@ -191,7 +234,7 @@ main h2 {
   padding-bottom: 20px;
 }
 
-#bares #confiterias #pizzerias #parrillas #pastas #comidas {
+#bares {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -200,7 +243,79 @@ main h2 {
   margin-bottom: 10px;
 }
 
-#hoteles #hosterias #hostels #cabanas {
+#confiterias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#pizzerias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#parrillas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#pastas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#comidas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#hoteles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#hosterias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#hostels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#cabanas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -257,7 +372,7 @@ main h2 {
   object-fit: cover;
 }
 .gallery-img:hover {
-  transform: scale(1, 5);
+  transform: scale(1.2);
   transition: all 1s;
   cursor: pointer;
 }

@@ -1,4 +1,16 @@
-#hoteles #hosterias #hostels #cabanas{
+#hoteles{ 
     @include flexbox (flex, row, wrap, space-around);
     @include m-top-bottom-10px;
  }
+#hosterias{
+    @include flexbox (flex, row, wrap, space-around);
+    @include m-top-bottom-10px;  
+}
+#hostels{
+    @include flexbox (flex, row, wrap, space-around);
+    @include m-top-bottom-10px; 
+}
+#cabanas{
+    @include flexbox (flex, row, wrap, space-around);
+    @include m-top-bottom-10px; 
+}
