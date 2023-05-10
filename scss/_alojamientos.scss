@@ -1,3 +1,11 @@
+.header2{
+    background-image: url(../Imagenes/header/headerhoteles.webp);
+    width: 100vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
 #hoteles{ 
     @include flexbox (flex, row, wrap, space-around);
     @include m-top-bottom-10px;

@@ -1,3 +1,11 @@
+.header3{
+    background-image: url(../Imagenes/header/headercomidaweb.webp);
+    width: 100vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
 #categorias{
     @include flexbox (flex, row, wrap, space-around);
     margin: 5px;

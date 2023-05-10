@@ -1,3 +1,11 @@
+.header4{
+  background-image: url(../Imagenes/header/headerparquesweb.webp);
+  width: 100vw;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
 #histovideo-pnlg{
   @include flexbox (flex, row, nowrap, space-between);
   }

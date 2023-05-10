@@ -1,11 +1,18 @@
+*{
+  box-sizing: border-box;
+}
 html{
     font-size: 100%;
  }
 body{
-    background-color: $bg-color
+    background-color: $bg-color;  
  }
  h1{
-  font-size: 85px;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 120px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 10);
  }
 h2{
   font-size: 22px;
@@ -19,13 +26,30 @@ h4{
 h5{
   font-size: 13px;
 }
-.navbar{
-  background-color: $mainColor;
-  width: 100%;
-  overflow: hidden;
-    form{
-      margin-right: 100px;
+header{
+  #navbar{
+    width: 100%;
+    background-color: rgb(110,218,226,0.6);
+    overflow: hidden;
+    display: flex;
+    ul{
+      display: flex;
+      margin-right: 90px;
+      li{
+        margin-right: 20px;
+        margin-left: 20px;
+        a{
+          color: $bg-color;
+          font-family: $mainFont;
+          font-size: 20px;
+          font-weight: 600;
+          &:hover{
+            color: $keyColor;
+          }
+        }
+      }
     }
+  }
 }
 
  .logo{
@@ -34,31 +58,7 @@ h5{
     border: none;
     margin-left: 110px;
  }
- 
- .headers{
-    position: relative;
-    img{
-      width: 100%;
-      overflow: hidden;
-      height: 50vh;
-      object-fit: cover;
-      opacity: 0.9;
-    }
-    h1{
-      position: absolute;
-      color: $bg-color;
-      top: 30%;
-      left: 30%;
-      text-shadow: 0 0 8px rgba(0, 0, 0, 1);
-    }
-    p{
-      @extend h1;
-      font-size: 30px;
-      top: 60%;
-      left: 25%;
-    }
-    
-}
+
  nav{
    background-color: $secondaryColor;
    position: static;
