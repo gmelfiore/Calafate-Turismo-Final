@@ -4,7 +4,7 @@
 }
 
 .bg-hielo {
-  background-color: #6edae2;
+  background-color: #3dbcc5;
 }
 
 .bg-green {
@@ -24,7 +24,7 @@
 }
 
 .text-hielo {
-  color: #6edae2;
+  color: #3dbcc5;
 }
 
 .text-green {
@@ -116,14 +116,13 @@ header #navbar ul li a:hover {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 180px;
   border: none;
   margin-left: 110px;
 }
 
 nav {
-  background-color: rgb(236, 224, 224);
+  background-color: rgb(197, 201, 208);
   position: static;
   padding: 10px;
   overflow: hidden;
@@ -132,29 +131,38 @@ nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 nav ul img {
   width: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
-nav span {
-  display: block;
-  font-weight: 600;
-  color: #026873;
+nav ul img:hover {
+  box-shadow: 0 4px 16px rgb(49, 138, 172);
+  transition: all 0.2s ease;
 }
 
 footer {
-  background-color: #6edae2;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
+  background-color: #3dbcc5;
   padding: 25px;
   overflow: hidden;
 }
 footer h3 {
   color: white;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+footer .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .redes svg {
+  margin: 15px;
 }
 
 main h2 {
@@ -167,18 +175,20 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
   overflow: hidden;
-}
-.error404 img {
+  background-image: url(../Imagenes/ERROR\ 404.webp);
   width: 100%;
-  object-fit: cover;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .error404 .btn-volver {
   border: 3px solid;
   border-radius: 10px;
-  border-color: #6edae2;
-  color: #6edae2;
+  border-color: #3dbcc5;
+  color: #3dbcc5;
   font-size: 20px;
 }
 .error404 .btn-volver:hover {
@@ -188,49 +198,55 @@ main h2 {
 
 @media (max-width: 472px) {
   .logo {
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 130px;
+    margin-left: 50px;
   }
   .buscador {
     width: 30vw;
   }
-  footer {
-    flex-direction: column;
-  }
-  footer svg {
-    justify-content: center;
-  }
-  .navbar form {
-    visibility: hidden;
-  }
-  nav img {
-    width: 60px;
-  }
-  nav span {
-    font-size: small;
-  }
-  .headers img {
-    height: 30vh;
-  }
-  .headers h1 {
+  footer h3 {
     font-size: 40px;
+    font-weight: 600;
+  }
+  nav ul {
+    justify-content: space-evenly;
+  }
+  nav ul img {
+    width: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  header {
+    height: 30vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  header h1 {
+    font-size: 60px;
     left: 20%;
   }
-  .headers p {
+  header p {
     font-size: 10px;
   }
 }
 @media (min-width: 473px) and (max-width: 1100px) {
-  .headers img {
+  header {
     height: 40vh;
   }
-  .headers h1 {
-    font-size: 50px;
+  header h1 {
+    font-size: 70px;
     left: 20%;
   }
-  .headers p {
+  header p {
     font-size: 20px;
+  }
+  nav ul {
+    justify-content: space-evenly;
+  }
+  nav ul img {
+    width: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 .header1 {
@@ -401,11 +417,22 @@ main h2 {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+#histovideo-pnlg h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: #026873;
+}
+#histovideo-pnlg p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 #histo-pnlg, #video-pnlg {
   width: 40%;
-  margin: 10px;
-  padding: 10px;
+  margin: 50px;
+  padding: 15px;
 }
 
 #video-pnlg {
@@ -422,6 +449,9 @@ main h2 {
   background-image: url(../Imagenes/bg-intendencia.jpg);
   background-size: contain;
   background-attachment: fixed;
+}
+.apn h3, .apn h4 {
+  text-align: center;
 }
 
 .gallery-title {
@@ -475,11 +505,18 @@ main h2 {
   #histovideo-pnlg {
     flex-direction: column-reverse;
   }
+  #histovideo-pnlg h2 {
+    font-size: 40px;
+  }
   #histo-pnlg, #video-pnlg {
     width: 100%;
+    margin: 10px;
+    padding: 10px;
   }
   #video-pnlg {
     width: 100%;
+    margin: 10px;
+    padding: 10px;
   }
 }
 .header5 {
@@ -504,8 +541,19 @@ main h2 {
 
 #historia-cal, #video-cal {
   width: 40%;
-  margin: 10px;
-  padding: 10px;
+  margin: 50px;
+  padding: 15px;
+}
+#historia-cal h2, #video-cal h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #026873;
+}
+#historia-cal p, #video-cal p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 #video-cal {
@@ -519,9 +567,16 @@ main h2 {
   }
   #historia-cal, #video-cal {
     width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+  #historia-cal h2, #video-cal h2 {
+    font-size: 40px;
   }
   #video-cal {
     width: 100%;
+    margin: 10px;
+    padding: 10px;
   }
 }
 

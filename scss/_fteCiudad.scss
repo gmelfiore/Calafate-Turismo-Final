@@ -14,8 +14,19 @@
   }
   #historia-cal{
     width: 40%;
-    margin: 10px;
-    padding: 10px;
+    margin: 50px;
+    padding: 15px;
+    h2{
+      font-family: $mainFont;
+      font-size: 50px;
+      font-weight: 600;
+      color: $keyColor;
+    }
+    p{
+      font-family: $mainFont;
+      font-size: 15px;
+      font-weight: 600;
+    }
   }
   #video-cal{
     @extend #historia-cal;
@@ -28,8 +39,15 @@
     }
     #historia-cal{
       width: 100%;
+      margin: 10px;
+      padding: 10px;
+      h2{
+        font-size: 40px;
+      }
     }
     #video-cal{
       width: 100%;
+      margin: 10px;
+      padding: 10px;
     }
     }

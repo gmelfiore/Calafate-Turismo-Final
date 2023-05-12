@@ -8,11 +8,22 @@
 }
 #histovideo-pnlg{
   @include flexbox (flex, row, nowrap, space-between);
+    h2{
+      font-family: $mainFont;
+      font-size: 60px;
+      font-weight: 600;
+      color: $keyColor;
+    }
+    p{
+      font-family: $mainFont;
+      font-size: 18px;
+      font-weight: 500;
+    }
   }
   #histo-pnlg{
     width: 40%;
-    margin: 10px;
-    padding: 10px;
+    margin: 50px;
+    padding: 15px;
   }
   #video-pnlg{
     @extend #histo-pnlg; 
@@ -25,6 +36,9 @@
     background-image: url(../Imagenes/bg-intendencia.jpg);
     background-size: contain;
     background-attachment: fixed;
+    h3,h4{
+      text-align: center;
+    }
   }
   .gallery-title{
     display: flex;
@@ -70,11 +84,18 @@
   @media (max-width:1000px){
     #histovideo-pnlg{
       flex-direction: column-reverse;
+      h2{
+        font-size:40px;
+      }
     }
     #histo-pnlg{
       width: 100%;
+      margin: 10px;
+      padding: 10px; 
     }
     #video-pnlg{
       width: 100%;
+      margin: 10px;
+      padding: 10px;
     }
     }
