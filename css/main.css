@@ -4,11 +4,11 @@
 }
 
 .bg-hielo {
-  background-color: #3dbcc5;
+  background-color: #3d74c5;
 }
 
 .bg-green {
-  background-color: #026873;
+  background-color: rgb(105, 56, 123);
 }
 
 .negrita {
@@ -24,11 +24,11 @@
 }
 
 .text-hielo {
-  color: #3dbcc5;
+  color: #3d74c5;
 }
 
 .text-green {
-  color: #026873;
+  color: rgb(105, 56, 123);
 }
 
 .centrar {
@@ -93,7 +93,7 @@ h5 {
 
 header #navbar {
   width: 100%;
-  background-color: rgba(110, 218, 226, 0.6);
+  background-color: rgba(61, 116, 197, 0.5);
   overflow: hidden;
   display: flex;
 }
@@ -112,7 +112,7 @@ header #navbar ul li a {
   font-weight: 600;
 }
 header #navbar ul li a:hover {
-  color: #026873;
+  color: rgb(105, 56, 123);
 }
 
 .logo {
@@ -124,7 +124,7 @@ header #navbar ul li a:hover {
 nav {
   background-color: rgb(197, 201, 208);
   position: static;
-  padding: 10px;
+  padding: 2px;
   overflow: hidden;
 }
 nav ul {
@@ -145,16 +145,16 @@ nav ul img:hover {
 }
 
 footer {
-  background-color: #3dbcc5;
+  background-color: #3d74c5;
   padding: 25px;
   overflow: hidden;
 }
 footer h3 {
   color: white;
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   font-family: "Noto Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 footer .redes {
   display: flex;
@@ -163,12 +163,6 @@ footer .redes {
 }
 footer .redes svg {
   margin: 15px;
-}
-
-main h2 {
-  display: block;
-  color: #026873;
-  text-align: center;
 }
 
 .error404 {
@@ -187,8 +181,8 @@ main h2 {
 .error404 .btn-volver {
   border: 3px solid;
   border-radius: 10px;
-  border-color: #3dbcc5;
-  color: #3dbcc5;
+  border-color: #3d74c5;
+  color: #3d74c5;
   font-size: 20px;
 }
 .error404 .btn-volver:hover {
@@ -196,13 +190,14 @@ main h2 {
   transition: all 0.2s ease;
 }
 
+#categorias {
+  padding-top: 15px;
+}
+
 @media (max-width: 472px) {
   .logo {
     width: 130px;
     margin-left: 50px;
-  }
-  .buscador {
-    width: 30vw;
   }
   footer h3 {
     font-size: 40px;
@@ -211,7 +206,7 @@ main h2 {
   nav ul {
     justify-content: space-evenly;
   }
-  nav ul img {
+  nav ul li img {
     width: 60px;
     margin-left: 0px;
     margin-right: 0px;
@@ -222,7 +217,7 @@ main h2 {
     background-size: cover;
   }
   header h1 {
-    font-size: 60px;
+    font-size: 50px;
     left: 20%;
   }
   header p {
@@ -421,7 +416,7 @@ main h2 {
   font-family: "Noto Sans", sans-serif;
   font-size: 60px;
   font-weight: 600;
-  color: #026873;
+  color: rgb(105, 56, 123);
 }
 #histovideo-pnlg p {
   font-family: "Noto Sans", sans-serif;
@@ -548,7 +543,7 @@ main h2 {
   font-family: "Noto Sans", sans-serif;
   font-size: 50px;
   font-weight: 600;
-  color: #026873;
+  color: rgb(105, 56, 123);
 }
 #historia-cal p, #video-cal p {
   font-family: "Noto Sans", sans-serif;
